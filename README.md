@@ -12,8 +12,10 @@ kubectl apply -f example-pod3.yaml
 ```
 
 ## pushing changes to dockerhub
+```
 docker build . -t monsterpah/sample-device-plugin
 docker push monsterpah/sample-device-plugin
+```
 
 ## remark
 
