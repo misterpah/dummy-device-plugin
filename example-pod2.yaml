@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: busybox-sleep2
+spec:
+  containers:
+    - name: busybox2
+      image: busybox
+      args:
+        - sleep
+        - infinity
+      resources:
+        limits:
+          hardware-vendor.example/foo: 1
